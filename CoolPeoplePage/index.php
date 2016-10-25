@@ -25,8 +25,8 @@
       function initMap() {
 
         var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 13,
-          center: {lat: 17.689008899999997, lng: 59.619794399999996}
+          zoom: 10,
+          center: {lat: 59.6498, lng: 17.9238}
         });
 
         // Create an array of alphabetical characters used to label the markers.
@@ -48,10 +48,9 @@
             {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
       }
       var locations = [
-        {lat: 17.689008899999997, lng: 59.619794399999996},
-        {lat: 17.689008899909997, lng: 59.619794399999996},
-        {lat: 17.689008899999997, lng: 59.619794399909996},
-        {lat: 17.689008899909997, lng: 59.619794399909996}
+        {lat: 59.6498, lng: 17.9238},
+        {lat: 59.6498, lng: 17.9238},
+        {lat: 55.6108, lng: 12.6052}
       ]
     </script>
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
