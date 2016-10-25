@@ -7,6 +7,7 @@ public class Member {
     private String name;
     private String latitude;
     private String longitude;
+    private String timestamp;
 
     public Integer getId() {
         return id;
@@ -39,6 +40,16 @@ public class Member {
     public void setLongitude(String longitude) {
         this.longitude = longitude;
     }
+
+    public String getTimestamp() {
+        return timestamp;
+    }
+
+    public void setTimestamp(String timestamp) {
+        this.timestamp = timestamp;
+    }
+    
+
     
     
 
