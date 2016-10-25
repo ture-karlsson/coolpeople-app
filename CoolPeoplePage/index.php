@@ -48,6 +48,11 @@
         var markerCluster = new MarkerClusterer(map, markers,
             {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
       }
+      
+      var xhr = new XMLHttpRequest();
+      xhr.open("GET", "http://eap7-coolpeople.apps.ocp.rocks/CoolPeopleService/resources/members", false);
+      xhr.send();
+      
       var locations = [
         {lat: 59.6498, lng: 17.9238},
         {lat: 59.6498, lng: 17.9238},
