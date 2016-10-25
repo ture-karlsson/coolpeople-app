@@ -3,7 +3,7 @@
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <title>Marker Clustering</title>
+    <title>Red Hat Cool People</title>
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
@@ -29,6 +29,7 @@
           center: {lat: 59.6498, lng: 17.9238}
         });
 
+
         // Create an array of alphabetical characters used to label the markers.
         var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 
@@ -47,10 +48,12 @@
         var markerCluster = new MarkerClusterer(map, markers,
             {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
       }
+      
       var locations = [
         {lat: 59.6498, lng: 17.9238},
         {lat: 59.6498, lng: 17.9238},
-        {lat: 55.6108, lng: 12.6052}
+        {lat: 55.6108, lng: 12.6052},
+        {lat: 60.3210, lng: 24.9529}
       ]
     </script>
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
