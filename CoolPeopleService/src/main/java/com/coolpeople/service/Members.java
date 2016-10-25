@@ -41,9 +41,9 @@ public class Members {
                         .add("latitude", member.getLatitude())
                         .add("timestamp", member.getTimestamp()));
             }
-            
+
             builder.add("members", memberList);
-            
+
             return builder.build();
         } // Create some sample data if the list is empty
         else {
@@ -83,6 +83,22 @@ public class Members {
 
         return builder.build();
 
+    }
+
+    @POST
+    @Path("/nearby")
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    public JsonObject getNearby(Member me) {
+
+        return Json.createObjectBuilder()
+                .add("timestamp", new Date().toString())
+                .add("members", Json.createArrayBuilder()
+                        .add(Json.createObjectBuilder().add("id", "1").add("name", "ture").add("longitude", "17.689008899999997").add("latitude", "59.619794399999996").add("timestamp", "1477394372"))
+                        .add(Json.createObjectBuilder().add("id", "2").add("name", "david").add("longitude", "17.689008899999997").add("latitude", "59.619794399999996").add("timestamp", "1477394373"))
+                        .add(Json.createObjectBuilder().add("id", "3").add("name", "henri").add("longitude", "17.689008899999997").add("latitude", "59.619794399999996").add("timestamp", "1477394374"))
+                        .add(Json.createObjectBuilder().add("id", "4").add("name", "martin").add("longitude", "17.689008899999997").add("latitude", "59.619794399999996").add("timestamp", "1477394375")))
+                .build();
     }
 
 }
